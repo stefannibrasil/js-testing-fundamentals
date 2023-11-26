@@ -1,5 +1,7 @@
 const {sumAsync, subtractAsync} = require('./math')
 
+// node --require '../../setup-globals.js' index.js
+
 test('sumAsync adds numbers asynchronously', async () => {
   const result = await sumAsync(3, 7)
   const expected = 10
